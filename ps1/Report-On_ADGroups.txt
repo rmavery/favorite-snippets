@@ -1,0 +1,3 @@
+# Get 'Description' and 'Notes (info)' from all AD groups beginning with 'XXX' 
+Get-ADGroup -Filter {name -like "XXX*"} -Properties Description,Info | Select Name,Description,Info
+

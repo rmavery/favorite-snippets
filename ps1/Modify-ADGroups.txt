@@ -1,0 +1,3 @@
+
+
+Get-ADGroup AD_Group_Name | SET-ADGROUP -Replace @{info="Information to be written to the [NOTES] section of the AD Group"}

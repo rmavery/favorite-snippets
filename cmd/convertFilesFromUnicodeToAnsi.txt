@@ -1,0 +1,6 @@
+set fileExt=%1
+
+FOR %%F in (*.%fileExt%) do type "%%F" > %%~nF.converted" 
+Del *.%fileExt% 
+Ren *.converted *.%fileExt%
+
